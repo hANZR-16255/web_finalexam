@@ -1,0 +1,38 @@
+@charset "utf-8";
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(image/background.png);
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(91, 105, 136, 0.8);
+}
+
+::-webkit-scrollbar-track{
+    background: rgb(194, 213, 241);
+}
+
+.foot{
+    margin-top: 0px;
+    width: 100vw;
+    height: 100px;
+    float: left;
+    clear: both;
+    text-align: center;
+    margin-bottom: 0px;
+    background-color: rgba(84, 132, 161, 0.8);
+}
+.foot p{
+    line-height: 10px;
+    color: rgb(28, 43, 43);
+}

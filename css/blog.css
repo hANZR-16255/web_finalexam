@@ -1,0 +1,201 @@
+@charset "utf-8";
+.mid{
+    height: 100vh;
+    width: 100vw;
+}
+
+.content{
+    padding-top: 60px;
+    padding-left: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.con{
+    display: flex;
+    width: 650px;
+    height: 200px;
+    background: rgba(208, 220, 230,0.2);
+    backdrop-filter: blur(0.2);
+    float: left;
+    clear: left;
+    margin-top: 30px;
+    backdrop-filter: blur(30px);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(103, 122, 138, 0.8);
+}
+.c1{
+    animation: c1load 0.5s linear;
+}
+.c2{
+    animation: c2load 1s linear;
+}
+.c3{
+    animation: c3load 1.5s linear;
+}
+
+.c1 .img{
+    background-image: url("image/project1.png");
+}
+.c1 .img:hover{
+    background-image: url("image/project12.png");
+}
+.c2 .img{
+    background-image: url("image/project22.png");
+}
+.c2 .img:hover{
+    background-image: url("image/project21.png");
+}
+.c3 .img{
+    background-image: url("image/project32.png");
+}
+.c3 .img:hover{
+    background-image: url("image/project31.png");
+}
+.imghid{
+    overflow: hidden;
+    width: 250px;
+}
+.con .img{
+    width: 250px;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    opacity: 0.8;
+    transition: 0.5s ease 0s;
+}
+.con .img:hover{
+    transform: scale(1.1);
+}
+.con .txt{
+    width: 400px;
+    padding: 0 40px;
+    color: rgb(25, 39, 49);
+    font-family: "幼圆";
+}
+.con .txt h2{
+    color: rgb(53, 75, 104);
+}
+.pri{
+    height: 500px;
+    width: 300px;
+    float: right;
+    clear: right;
+    position: fixed;
+    margin-top: -650px;
+    margin-left: 1100px;
+    animation: priload 2s linear;
+}
+
+.pri .prihead{
+    height: 250px;
+    background-color: rgb(229, 239, 243);
+    border-radius: 20px;
+    padding-top: 50px;
+    box-shadow: 0 0 8px rgba(39, 69, 88,0.6);
+}
+.prihead a{
+    display: block;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 90px;
+    margin: auto;
+    border: 3px groove rgb(35, 82, 121);
+}
+.pri .prihead .tx{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-image: url("image/tx.png");
+    background-size: cover;
+    transition: 0.5s ease 0s;
+}
+.prihead .tx:hover{
+    transform: scale(1.1);
+}
+
+.prihead h2{
+    color: rgb(32, 76, 97);
+    text-align: center;
+}
+.prihead p{
+    color: rgb(118, 175, 185);
+    text-align: center;
+}
+
+.pri .tag{
+    height: 200px;
+    background-color: rgb(229, 239, 243);
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgba(39, 69, 88,0.6);
+}
+
+.tag h2{
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(56, 117, 158);
+    font-weight: bolder;
+}
+
+.tag p{
+    word-wrap: break-word;
+    display: block;
+    width: 220px;
+    padding-left: 40px;
+    color: rgb(109, 166, 168);
+}
+
+
+@keyframes c1load{
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 40px;
+    }
+}
+@keyframes c2load{
+    0%{
+        
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes c3load{
+    0%{
+        
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes priload{
+    0%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

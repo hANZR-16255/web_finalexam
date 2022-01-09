@@ -1,0 +1,37 @@
+@charset "utf-8";
+.con{
+    margin-top: -100vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    display: none;
+}
+.load{
+    position: relative; 
+    display: flex;   
+}
+.load .dot{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-attachment: fixed;
+    background: rgb(120, 214, 214);
+    margin: 20px 0 0 20px;
+    border-radius: 50%;
+    animation: dotanim 1s infinite linear;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes dotanim{
+    0%{
+        transform: scale(0.2);
+    }
+    10%{
+        transform: scale(1);
+    }
+    50%,100%{
+        transform: scale(0.2);
+    }
+}

@@ -1,0 +1,174 @@
+@charset "utf-8";
+.mid{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.joinpart{
+    width: 1200px;
+    height: 650px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-image: url("image/join.jpg");
+    background-repeat: no-repeat;
+    background-size: 1300px;
+    overflow: hidden;
+    opacity: 0.9;
+    border-radius: 50px;
+    animation: loadbac 1s linear;
+    transition: 1s ease 0.2s;
+}
+
+.joinpart .left{
+    width: 400px;
+    height: 100%;
+}
+
+.joinpart .left .square{
+    width: 250px;
+    height: 250px;
+    border: 5px solid rgb(183, 207, 226);
+    margin: auto;
+    margin-top: 200px;
+    border-radius: 30%;
+    animation: a1 3s infinite linear;
+}
+.left .square::before{
+    content: "";
+    width: 250px;
+    height: 250px;
+    transform: rotate(30deg);
+    border: 5px solid rgb(183, 207, 226);
+    border-radius: 40%;
+    position: absolute;
+    animation: a2 25s infinite linear;
+}
+
+.left .square::after{
+    content: "";
+    width: 250px;
+    height: 250px;
+    transform: rotate(60deg);
+    border: 5px solid rgb(183, 207, 226);
+    border-radius: 30%;
+    position: absolute;
+    animation: a2 60s infinite linear;
+}
+
+.left .tit{
+    position: absolute;
+    font-size: 2em;
+    margin-left: 130px;
+    margin-top: -170px;
+    color: rgb(183, 207, 226);
+    z-index: -10;
+}
+
+.left .square:hover{
+    animation: a1 15s infinite linear;
+}
+.left .square:hover::before{
+    animation: a2 80s infinite linear;
+}
+.left .square:hover::after{
+    animation: a1 50s infinite linear;
+}
+
+.joinpart .right{
+    width: 800px;
+    height: 100%;
+}
+.joinpart .goal{
+    color: rgb(206, 228, 238);
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.joinpart .goal h1{
+    font-size: 4em;
+    font-weight: bolder;
+    line-height: 200px;
+}
+
+.joinpart .goal p{
+    word-wrap: break-word;
+}
+.meth{
+    width: 500px;
+    height: 100px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.meth .icon{
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.4s ease 0s;
+}
+.meth .icon:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.meth .qq{
+    background-image: url("image/qq.png");
+    background-size: 25px;
+}
+.meth .vx{
+    background-image: url("image/vx.png");
+}
+.meth .bili{
+    background-image: url("image/bili.png");
+    background-color: rgb(245, 128, 147);
+}
+.meth .gh{
+    background-image: url("image/github.png");
+    background-size: 40px;
+}
+
+.icon ul{
+    display: none;
+    list-style: none;
+    margin-top: 30px;
+    width: 150px;
+    margin-left: -80px;
+    color: white;
+    font-size: 14px;
+}
+.icon:hover ul{
+    display: block;
+    position: absolute;
+}
+
+
+@keyframes a1{
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes a2{
+    to{
+        transform: rotate(-10800deg
+        );
+    }
+}
+@keyframes loadbac{
+    0%{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 50px;
+    }
+}

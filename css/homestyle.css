@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+.titleimg{
+    background-image: url("image/head.jpeg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 1540px;
+    background-attachment: fixed;
+    width: 100vw;
+    transition: 0.5s ease 0s;
+    animation: load 0.5s;
+}
+
+.titleimg .title{
+    width: 1540px;
+    padding:200px;
+    font-size: 100px;
+    font-weight: bolder;
+    color: rgba(49, 70, 87,0.9);
+}
+
+.main{
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.sec{
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+}
+
+.pt{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 250px;
+    float: left;
+    margin: 150px 0px 0px 105px;
+    background: rgba(219, 235, 241,0.8);
+    box-shadow: 0 0 15px rgb(59, 73, 95);
+    border-radius: 15px;
+    overflow: hidden;
+    scroll-snap-align: start;
+    transition: all 0.5s ease 0s;
+}
+.pt:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.imghid{
+    overflow: hidden;
+}
+.part1 .img{
+    background-image: url("image/homepic1.png");
+}
+.part2 .img{
+    background-image: url("image/homepic2.png");
+}
+.part3 .img{
+    background-image: url("image/homepic3.png");
+}
+.part4 .img{
+    background-image: url("image/homepic4.png");
+}
+
+.pt .img{
+    height: 190px;
+    width: 250px;
+    background-size: cover;
+    background-position: 0px -30px;
+    transition: all 0.5s ease 0s;
+    opacity: 0.8;
+}
+
+.pt .img:hover{
+    transform: scale(1.1);
+}
+
+.pt .txt{
+    height: 310px;
+    width: 200px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    
+}
+
+.pt .txt h1{
+    text-align: center;
+    font-size: 3em;
+    color: rgb(28, 44, 68);
+    height: 30px;
+    line-height: 30px;
+}
+
+.pt .txt p{
+    margin-top: -2px;
+    word-wrap: break-word;
+    color: rgb(114, 182, 202);
+}
+@keyframes load{
+    0%{
+        background-position-y: 50px;
+        opacity: 0;
+    }
+    100%{
+        background-position-y: 0px;
+        opacity: 1;
+    }
+}
