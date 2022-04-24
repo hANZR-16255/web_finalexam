@@ -36,22 +36,22 @@
 }
 
 .c1 .img{
-    background-image: url("image/project1.png");
+    background-image: url("../image/project1.png");
 }
 .c1 .img:hover{
-    background-image: url("image/project12.png");
+    background-image: url("../image/project12.png");
 }
 .c2 .img{
-    background-image: url("image/project22.png");
+    background-image: url("../image/project22.png");
 }
 .c2 .img:hover{
-    background-image: url("image/project21.png");
+    background-image: url("../image/project21.png");
 }
 .c3 .img{
-    background-image: url("image/project32.png");
+    background-image: url("../image/project32.png");
 }
 .c3 .img:hover{
-    background-image: url("image/project31.png");
+    background-image: url("../image/project31.png");
 }
 .imghid{
     overflow: hidden;
@@ -108,7 +108,7 @@
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background-image: url("image/tx.png");
+    background-image: url("../image/tx.png");
     background-size: cover;
     transition: 0.5s ease 0s;
 }

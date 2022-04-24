@@ -10,7 +10,7 @@
     top: 0px;
     height: 250px;
     width: 100%;
-    background-image: url("image/headimg2.jpg");
+    background-image: url("../image/headimg2.jpg");
     background-size: 1540px;
     background-repeat: no-repeat;
     background-position-y: -190px;
@@ -38,13 +38,13 @@
     margin-top: 40px;
 }
 .a1 .img{
-    background-image: url("image/about1.jpg");
+    background-image: url("../image/about1.jpg");
 }
 .a2 .img{
-    background-image: url("image/about2.jpg");
+    background-image: url("../image/about2.jpg");
 }
 .a3 .img{
-    background-image: url("image/about3.jpg");
+    background-image: url("../image/about3.jpg");
 }
 
 .ab p{

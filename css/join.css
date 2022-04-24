@@ -13,7 +13,7 @@
     margin: auto;
     display: flex;
     justify-content: center;
-    background-image: url("image/join.jpg");
+    background-image: url("../image/join.jpg");
     background-repeat: no-repeat;
     background-size: 1300px;
     overflow: hidden;
@@ -121,18 +121,18 @@
     cursor: pointer;
 }
 .meth .qq{
-    background-image: url("image/qq.png");
+    background-image: url("../image/qq.png");
     background-size: 25px;
 }
 .meth .vx{
-    background-image: url("image/vx.png");
+    background-image: url("../image/vx.png");
 }
 .meth .bili{
-    background-image: url("image/bili.png");
+    background-image: url("../image/bili.png");
     background-color: rgb(245, 128, 147);
 }
 .meth .gh{
-    background-image: url("image/github.png");
+    background-image: url("../image/github.png");
     background-size: 40px;
 }
 
